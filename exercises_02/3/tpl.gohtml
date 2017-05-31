@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+  <table>
+    <tr>
+      <th>Index</th>
+      <th>Date</th>
+      <th>Open</th>
+    </tr>
+{{range $i, $v := .}}
+    <tr>
+      <td>{{$i}}</td>
+      <td>{{$v.Date}}</td>
+      <td>{{$v.Open}}</td>
+    </tr>
+{{end}}
+  </table>
+</body>
+</html>
